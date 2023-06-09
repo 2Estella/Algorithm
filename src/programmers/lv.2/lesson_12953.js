@@ -8,7 +8,7 @@
  * @returns arr 안의 수들의 최소 공배수
  */
 function solution(arr) {
-  // 최소 공약수 얻기
+  // 최대공약수 얻기
   const getGcd = (a, b) => {
     if (b === 0) {
       return a; 
