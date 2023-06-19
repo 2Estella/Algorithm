@@ -8,8 +8,8 @@
  * @returns 탈락하는 경우 [ 번호, 차례 ] or 탈락자가 없는 경우 [0, 0]
  */
 function solution(n, words) {
-  for ( let i = 1; i < words.length; i++ ) {
-    if (words[i-1].slice(-1) !== words[i][0] || words.slice(0, i).includes(words[i])) {
+  for (let i = 1; i < words.length; i++) {
+    if (words[i - 1].slice(-1) !== words[i][0] || words.slice(0, i).includes(words[i])) {
       return [i % n + 1, parseInt(i / n) + 1]
     }
   }
